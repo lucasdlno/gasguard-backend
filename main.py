@@ -7,7 +7,7 @@ from pydantic import BaseModel
 
 
 # 1. Configuração do PostgreSQL (Altere 'suasenha' e 'gasguard' para os seus dados)
-DATABASE_URL = "postgresql://postgres:3lEfAnt3@localhost:5433/gasguard?client_encoding=utf8"
+DATABASE_URL = "postgresql://neondb_owner:npg_0dzel3sJKGIF@ep-restless-tree-apthtfcz.c-7.us-east-1.aws.neon.tech/neondb?sslmode=require"
 
 engine = create_engine(DATABASE_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
